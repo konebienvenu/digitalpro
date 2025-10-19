@@ -2,9 +2,15 @@
 
 export interface Feedback {
   name: string;
-  message: string;
-  createdAt?: Date;
+  comment: string;
+  rating_accueil: number;
+  rating_food: number;
+  rating_atmosphere: number;
+  rating_value: number;
+  average_rating: number;
+  category: string;
 }
+
 
 /**
  * Retourne tous les feedbacks (placeholder)
