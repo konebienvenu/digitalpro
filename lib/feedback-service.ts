@@ -1,11 +1,23 @@
 // lib/feedback-service.ts
 
-export async function getAllFeedback() {
-  // Placeholder : retourne un tableau vide pour le moment
+export interface Feedback {
+  name: string;
+  message: string;
+  createdAt?: Date;
+}
+
+/**
+ * Retourne tous les feedbacks (placeholder)
+ */
+export async function getAllFeedbacks(): Promise<Feedback[]> {
+  // Ici on retourne un tableau vide pour l'instant
   return [];
 }
 
-export async function addFeedback(feedback: { name: string; message: string }) {
-  // Placeholder : retourne success=true pour Vercel
+/**
+ * Enregistre un feedback (placeholder)
+ */
+export async function saveFeedback(feedback: Feedback): Promise<{ success: boolean }> {
+  // Simule l'enregistrement et retourne success=true
   return { success: true };
 }

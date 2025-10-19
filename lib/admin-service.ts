@@ -1,11 +1,17 @@
 // lib/admin-service.ts
 
-export async function resetAdminPassword(email: string) {
-  // Placeholder : retourne success=true
-  return { success: true };
+/**
+ * Vérifie la réponse de sécurité de l'admin (placeholder)
+ */
+export async function verifySecurityAnswer(answer: string): Promise<boolean> {
+  // Placeholder : retourne toujours true
+  return true;
 }
 
-export async function updateAdminData(data: any) {
+/**
+ * Met à jour le mot de passe de l'admin (placeholder)
+ */
+export async function updateAdminPassword(newPassword: string): Promise<{ success: boolean }> {
   // Placeholder : retourne success=true
   return { success: true };
 }
